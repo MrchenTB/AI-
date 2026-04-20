@@ -1,0 +1,24 @@
+[project]
+name = "ch1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Mr.chenTB",email = "aa0922900373@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "langchain (>=1.2.13,<2.0.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)",
+    "langchain-google-genai (>=4.2.1,<5.0.0)",
+    "langchain-core (>=1.2.22,<2.0.0)",
+    "streamlit (>=1.55.0,<2.0.0)",
+    "plotly (>=6.6.0,<7.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ch1", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
